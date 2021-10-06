@@ -1,0 +1,79 @@
+title: "Vino – A Refined Winery, Wine Bar and Vineyard Theme"
+owner: "Sherwin Van Wyk"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# https://jekyllrb.com/docs/permalinks/
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+collections:
+  products:
+    output: true
+    permalink: /products/:path
+  archives:
+    output: true
+    permalink: /archives/:path/
+
+social:
+  facebook: 'todo'
+  instagram: 'brothersinvines'
+  tumblr: ''
+  twitter: 'todo'
+
+menu:
+  -
+    text: 'Home'
+    url: '/'
+  -
+    text: 'About'
+    url: '/about'
+  -
+    text: 'Products'
+    url: '/products'
+  -
+    text: 'Blog'
+    url: '/blog'
+  -
+    text: 'Contact Us'
+    url: '/contact-us'
+
+widgets:
+  instagram:
+    -
+      postID: CAStOSRhRxQ
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-1.jpeg
+    -
+      postID: CASv8QJh9da
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-2.jpeg
+    -
+      postID: CC3ApqDpWSt
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-3.jpeg
+    -
+      postID: CFZo8wBpESZ
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-4.jpeg
+    -
+      postID: CIV0iutpTMc
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-5.jpeg
+    -
+      postID: CKxuW2kpCAr
+      image_url: assets/brothers-in-vine/images/widgets/instagram/image-6.jpeg
+
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - .idea/

@@ -1,0 +1,21 @@
+{
+  "name": "template-static-site",
+  "version": "1.0.0",
+  "description": "This repo is intended to be forked and work out the box",
+  "main": "index.js",
+  "scripts": {
+    "install": "bundle install",
+    "update": "bundle update",
+    "start": "bundle exec jekyll serve --port 4001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigiswayne/template-static-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craigiswayne/template-static-site/issues"
+  },
+  "homepage": "https://github.com/craigiswayne/template-static-site#readme"
+}
