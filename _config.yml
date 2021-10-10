@@ -1,4 +1,4 @@
-version: '1.0.5'
+version: '1.0.6'
 title: 'Brothers in Vines'
 author: 'Sherwin Van Wyk'
 email: 'brothersinvines@gmail.com'
@@ -79,33 +79,43 @@ home:
     -
       title: 'Limitless Blending'
       tagline: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
+        A unique approach to the Wine making Industry
       imageURL: assets/brothers-in-vine/images/slideshow/slide-13.png
     -
-      title: 'Slide 2'
+      title: 'Family Orientated'
       tagline: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
-      im ageURL: assets/brothers-in-vine/images/slideshow/slide-24.png
+        Inclusivity, Ingenuity and Passion for our craft
+      imageURL: assets/brothers-in-vine/images/slideshow/slide-24.png
     -
-      title: 'Quality Wines'
+      title: 'Virtual Cellar'
       tagline: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
+        Blend without restrictions
       imageURL: assets/brothers-in-vine/images/slideshow/slide-17.png
+    -
+      title: 'Founded in 2015'
+      tagline: >-
+        15 Years of Experience of Dedication and Passion
+      imageURL: assets/brothers-in-vine/images/slideshow/slide-15.png
+    -
+      title: 'Quality & Balance Grapes'
+      tagline: >-
+        Producing an outstanding wine for you to enjoy
+      imageURL: assets/brothers-in-vine/images/slideshow/slide-20.png
 
 stores:
   -
-    name: 'Shanghai'
+    name: 'Chine'
     countrySlug: 'china'
-    phone: '+34 (0) 011 0123 012'
+    phone: '+86 (0) 150 2680 5630'
     email: 'brothersinvines@gmail.com'
     address: >-
-      198 West 21th Street, Suite 721
-      Paris 18010
+      Shanghai,
+      China
   -
     name: 'South Africa'
     countrySlug: 'south-africa'
     phone: '+27 (0) 83 273 9895'
     email: 'brothersinvines@gmail.com'
     address: >-
-      198 West 21th Street, Suite 721
-      Paris 18010
+      Western Cape,
+      South Africa
