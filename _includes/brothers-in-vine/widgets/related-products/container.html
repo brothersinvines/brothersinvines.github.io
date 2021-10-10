@@ -1,0 +1,10 @@
+<!-- try use this: site.related_posts -->
+<section class="related products">
+    <h2>Related products</h2>
+    <ul class="products columns-4">
+        {% assign related_posts = site.products | where_exp:"post", "post.url != page.url" | sample:4 %}
+        {% for post in related_posts %}
+            {%- include brothers-in-vine/widgets/related-products/item.html -%}
+        {% endfor %}
+    </ul>
+</section>

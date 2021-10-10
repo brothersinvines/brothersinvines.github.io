@@ -1,0 +1,43 @@
+<div class="widget eltdf-blog-list-widget">
+    <h5>Latest Posts</h5>
+    <div class="eltdf-blog-list-holder  eltdf-blog-list-columns-1 eltdf-blog-list-normal-space eltdf-simple"
+         data-max-num-pages="6" data-next-page="2" data-type="simple" data-number-of-posts="4"
+         data-number-of-columns="1" data-image-size="full" data-order-by="date" data-order="DESC"
+         data-title-tag="h4" data-text-length="90" data-post-info-section="yes"
+         data-post-info-author="no" data-post-info-date="yes" data-post-info-category="yes"
+         data-post-info-comments="yes" data-post-info-like="no" data-post-info-share="no"
+         data-post-info-tags="no" data-enable-read-more-button="yes"
+         data-enable-load-more-button="no">
+        <ul class="eltdf-blog-list">
+            {% for post in site.posts limit: 4 %}
+            <li class="eltdf-bli clearfix">
+                <div class="eltdf-bli-inner">
+                    <div class="eltdf-bli-image">
+                        <a itemprop="url" href="{{post.url}}"
+                           title="{{post.title}}">
+                            <img width="84" height="84" src="{{post.image}}" class="attachment-84x84 size-84x84 wp-post-image" alt="a" loading="lazy" sizes="(max-width: 84px) 100vw, 84px">
+                        </a>
+                    </div>
+                    <div class="eltdf-item-text-holder">
+                        <h4 itemprop="name" class="eltdf-bli-title entry-title" style="text-transform: none">
+                            <span class="eltdf-bli-title-inner">
+                                <a itemprop="url" href="{{post.url}}" title="{{post.title}}">
+                                    {{post.title}}
+                                </a>
+                            </span>
+                        </h4>
+                        <div class="eltdf-bli-info">
+                            <span itemprop="dateCreated" class="eltdf-post-info-date entry-date published updated">
+                                <a itemprop="url" href="{{post.url}}">
+                                    {{ post.date | date: '%B %d, %Y' }}
+                                </a>
+                                <meta itemprop="interactionCount" content="UserComments: 0">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

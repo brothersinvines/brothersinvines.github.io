@@ -4,9 +4,8 @@
   "description": "This repo is intended to be forked and work out the box",
   "main": "index.js",
   "scripts": {
-    "install": "bundle install",
-    "update": "bundle update",
-    "start": "bundle exec jekyll serve --port 4001"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "bundle exec jekyll serve --livereload"
   },
   "repository": {
     "type": "git",

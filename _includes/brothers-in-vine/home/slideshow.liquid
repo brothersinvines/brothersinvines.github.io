@@ -1,0 +1,120 @@
+<rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="background:#c2c0b1;padding:0;">
+
+    <rs-module id="rev_slider_1_1" style="" data-version="6.4.11">
+        <rs-slides>
+            {% for item in site.home.slideshow %}
+                <rs-slide data-key="rs-{{ forloop.index }}" data-title="Slide" data-thumb="{{ item.imageURL }}" data-in="o:0;" data-out="a:false;">
+                    <img src="{{ item.imageURL | relative_url }}" title="Main Home" class="rev-slidebg tp-rs-img" data-parallax="8" data-no-retina="">
+                    <rs-layer id="slider-1-slide-1-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:-58px,-58px,-121px,-120px;" data-text="w:nowrap,nowrap,normal,normal;s:75,68,68,45;l:90,85,75,53;ls:0.1em;a:center;" data-dim="w:auto,auto,434px,334px;" data-basealign="slide" data-rsp_o="off" data-frame_0="y:50px;" data-frame_1="e:power2.out;st:400;sp:800;sR:400;" data-frame_999="y:-50px;o:0;e:power2.out;st:w;sp:500;sR:2800;" style="z-index:5;font-family:Cinzel;text-transform:uppercase;">
+                        {{ item.title }}
+                    </rs-layer>
+                    <rs-layer id="slider-1-slide-1-layer-3" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="x:c;xo:0,0,0,-1px;y:m;yo:87px,85px,68px,79px;" data-text="w:normal;s:20,20,20,17;l:32,32,32,27;ls:0.08em;fw:300;a:center;" data-dim="w:821px,737px,592px,355px;h:99px,100px,129px,197px;" data-basealign="slide" data-rsp_o="off" data-frame_0="o:1;" data-frame_0_lines="d:10;y:50px;o:0;" data-frame_1="e:power2.out;st:500;sp:800;sR:500;" data-frame_1_lines="d:10;" data-frame_999="y:-50px;o:0;e:power2.out;st:w;sp:500;sR:2700;" style="z-index:7;font-family:Catamaran;">
+                        {{ item.tagline }}
+                    </rs-layer>
+                    <rs-layer id="slider-1-slide-1-layer-4" data-type="image" data-rsp_ch="on" data-xy="x:c;y:m;yo:8px,6px,-24px,-45px;" data-text="l:22;a:inherit;" data-dim="w:['115px','115px','115px','115px'];h:['12px','12px','12px','12px'];" data-basealign="slide" data-rsp_o="off" data-frame_0="y:50px;" data-frame_1="e:power2.out;st:450;sp:800;sR:450;" data-frame_999="y:-50px;o:0;e:power2.out;st:w;sp:500;sR:2750;" style="z-index:6;">
+                        <img src="{{ "/assets/brothers-in-vine/images/separator.png" | relative_url }}" alt="a" class="tp-rs-img" width="115" height="12" data-no-retina="">
+                    </rs-layer>
+                    {% comment %}<rs-layer id="slider-1-slide-1-layer-5" data-type="text" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:143px,139px,138px,124px;" data-text="w:normal;l:22;fw:700;a:center;" data-dim="w:1522px;h:24px;" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-frame_0="y:50px;" data-frame_1="e:power2.out;st:550;sp:800;sR:550;" data-frame_999="y:-50px;o:0;e:power2.out;st:w;sp:500;sR:2650;" style="z-index:8;font-family:Catamaran;">{% endcomment %}
+                        {% comment %}<a itemprop="url" href="https://themeforest.net/item/vino-a-refined-winery-wine-bar-and-vineyard-theme/19757787?ref=Elated-Themes" target="_blank" style="color: #ffffff;border-color: #ffffff" class="eltdf-btn eltdf-btn-medium eltdf-btn-outline">{% endcomment %}
+                            {% comment %}<span class="eltdf-btn-text">View Features</span>{% endcomment %}
+                        {% comment %}</a>{% endcomment %}
+                    {% comment %}</rs-layer>{% endcomment %}
+                </rs-slide>
+            {% endfor %}
+        </rs-slides>
+    </rs-module>
+
+
+    <script data-cfasync="false" src="{{ "/assets/brothers-in-vine/scripts/email-decode.min.js" | relative_url }}""></script>
+    <script type="text/javascript">
+      setREVStartSize({c: 'rev_slider_1_1',rl:[1920,1370,850,480],el:[650,550,620,500],gw:[1300,800,600,320],gh:[650,550,620,500],type:'standard',justify:'',layout:'fullscreen',offsetContainer:'.touch .eltdf-mobile-header',offset:'',mh:"0"});
+      var	revapi1,
+          tpj;
+      function revinit_revslider11() {
+        jQuery(function() {
+          tpj = jQuery;
+          revapi1 = tpj("#rev_slider_1_1");
+          if(revapi1==undefined || revapi1.revolution == undefined){
+            revslider_showDoubleJqueryError("rev_slider_1_1");
+          }else{
+            revapi1.revolution({
+              DPR:"dpr",
+              sliderLayout:"fullscreen",
+              duration:4000,
+              visibilityLevels:"1920,1370,850,480",
+              gridwidth:"1300,800,600,320",
+              gridheight:"650,550,620,500",
+              perspective:600,
+              perspectiveType:"local",
+              editorheight:"650,550,620,500",
+              responsiveLevels:"1920,1370,850,480",
+              disableForceFullWidth:true,
+              fullScreenOffsetContainer:".touch .eltdf-mobile-header",
+              progressBar:{disableProgressBar:true},
+              navigation: {
+                mouseScrollNavigation:false,
+                wheelCallDelay:1000,
+                onHoverStop:false,
+                arrows: {
+                  enable:true,
+                  style:"vino",
+                  hide_onmobile:true,
+                  hide_under:1250,
+                  left: {
+                    v_offset:40
+                  },
+                  right: {
+                    v_offset:40
+                  }
+                },
+                bullets: {
+                  enable:true,
+                  tmp:"<span class=\"tp-bullet-inner\"></span>",
+                  style:"vino",
+                  v_offset:36,
+                  space:8
+                }
+              },
+              parallax: {
+                levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+                type:"mouse"
+              },
+              fanim: {
+                in:{"o":0},
+                out:{"a":false},
+                speed:300
+              },
+              fallbacks: {
+                allowHTML5AutoPlayOnAndroid:true
+              },
+            });
+          }
+
+        });
+      } // End of RevInitScript
+      var once_revslider11 = false;
+      if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11 ) { once_revslider11 = true; revinit_revslider11();}});} else {once_revslider11 = true; revinit_revslider11();}
+    </script>
+    <script>
+      var htmlDivCss = unescape("%23rev_slider_1_1_wrapper%20.vino.tparrows%20%7B%0A%20%20width%3A20px%3B%0A%20%20height%3A20px%3B%0A%20%20background%3Atransparent%3B%0A%20%7D%0A%20%23rev_slider_1_1_wrapper%20.vino.tparrows%3Abefore%20%7B%0A%20width%3A20px%3B%0A%20height%3A20px%3B%0A%20line-height%3A20px%3B%0A%20font-size%3A%2020px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0Afont-family%3A%20%27Linearicons-Free%27%3B%0Aspeak%3A%20none%3B%0Afont-style%3A%20normal%3B%0Afont-weight%3A%20normal%3B%0Afont-variant%3A%20normal%3B%0Atext-transform%3A%20none%3B%0Aline-height%3A%201%3B%0A-webkit-font-smoothing%3A%20antialiased%3B%0A-moz-osx-font-smoothing%3A%20grayscale%3B%0A%20%7D%0A%20%23rev_slider_1_1_wrapper%20.vino.tparrows.tp-leftarrow%3Abefore%7B%0A%20content%3A%20%22%5Ce875%22%3B%0A%20%7D%0A%20%23rev_slider_1_1_wrapper%20.vino.tparrows.tp-rightarrow%3Abefore%7B%0A%20content%3A%20%22%5Ce876%22%3B%0A%20%7D%0A%20%20%23rev_slider_1_1_wrapper%20.vino.tparrows.rs-touchhover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20box-shadow%3Ainset%200%200%200%201px%20rgb%28160%2C160%2C160%29%3B%0A%20%20background%3Atransparent%3B%0A%20%20width%3A%2011px%3B%0A%20%20height%3A%2011px%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.selected%2C%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.rs-touchhover%20%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background%3Atransparent%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet-inner%20%7B%0A%20%20-webkit-transition%3A%20background-color%200.3s%20ease%2C%20-webkit-transform%200.3s%20ease%3B%0A%20%20transition%3A%20background-color%200.3s%20ease%2C%20transform%200.3s%20ease%3B%0A%20%20top%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20outline%3A%20none%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background-color%3Atransparent%3B%0A%20%20text-indent%3A%20-999em%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20position%3A%20absolute%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.rs-touchhover%20.tp-bullet-inner%7B%0A%20background-color%3A%20%23fff%3B%0A%7D%0A%0A.eltdf-dark-header%20%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet%20%7B%0A%09box-shadow%3A%20inset%200%200%200%201px%20%23fff%3B%0A%7D%0A%0A.eltdf-dark-header%20%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A.eltdf-dark-header%20%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet.rs-touchhover%20.tp-bullet-inner%20%7B%0A%09background-color%3A%20%23000%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.vino%20.tp-bullet%20%7B%0Abackground%3Atransparent%3B%0A-webkit-box-shadow%3A%20inset%200%200%200%201px%20rgb%28255%2C255%2C255%29%3B%0Abox-shadow%3A%20inset%200%200%200%201px%20rgb%28255%2C255%2C255%29%3B%0A%7D%0A");
+      var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+      if(htmlDiv) {
+        htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+      }else{
+        var htmlDiv = document.createElement('div');
+        htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+        document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+      }
+    </script>
+    <script>
+      var htmlDivCss = unescape("%0A%0A%0A%0A%0A%0A");
+      var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+      if(htmlDiv) {
+        htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+      }else{
+        var htmlDiv = document.createElement('div');
+        htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+        document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+      }
+    </script>
+</rs-module-wrap>

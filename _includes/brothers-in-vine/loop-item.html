@@ -1,0 +1,33 @@
+<div class="eltdf-pli eltdf-woo-image-normal-width">
+    <div class="eltdf-pli-inner">
+        <span class="eltd-pli-image-border-top"></span>
+        <span class="eltd-pli-image-border-right"></span>
+        <span class="eltd-pli-image-border-bottom"></span>
+        <span class="eltd-pli-image-border-left"></span>
+        <div class="eltdf-pli-image ">
+            <img width="650" height="650"
+                 src="{{ post.image | relative_url }}"
+                 class="attachment-shop_catalog size-shop_catalog wp-post-image"
+                 alt="a" loading="lazy">
+        </div>
+        <div class="eltdf-pli-text">
+            <div class="eltdf-pli-text-outer">
+                <div class="eltdf-pli-text-inner">
+                    <div class="eltdf-pli-add-to-cart eltdf-default-skin">
+                        <a href="{{ post.url | relative_url }}" class="button eltdf-button">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="eltdf-pli-link" itemprop="url" href="{{ post.url | relative_url }}" title="{{post.title}}"></a>
+    </div>
+    <div class="eltdf-pli-text-wrapper">
+        <h5 itemprop="name" class="entry-title eltdf-pli-title">
+            <a itemprop="url" href="{{ post.url | relative_url }}">
+                {{post.title}}
+            </a>
+        </h5>
+    </div>
+</div>

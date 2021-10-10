@@ -3,10 +3,6 @@ This repo is intended to be forked and work out the box
 
 ---
 
-### Prerequisites
-1. [ ] Create Organization on Github with the same name as your proposed domain name
-
-
 ## Getting Started
 ```
 bundle exec jekyll serve
@@ -91,3 +87,4 @@ layout: brothers-in-vine/home
 19. MUST DALA THIS: https://aneejian.com/automated-jekyll-archives-github-pages/
 20. this for using plugins https://jekyllrb.com/docs/continuous-integration/github-actions/
 21. [Jekyll CheatSheet](https://gist.github.com/JJediny/a466eed62cee30ad45e2)
+22. Setting up a domain for the url: https://jinnabalu.medium.com/godaddy-domain-with-github-pages-62aed906d4ef

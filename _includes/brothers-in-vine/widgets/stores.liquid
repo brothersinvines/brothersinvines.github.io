@@ -1,0 +1,46 @@
+<div class="vc_row wpb_row vc_inner vc_row-fluid">
+    {% for store in site.stores %}
+    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-6 vc_col-md-6">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="wpb_text_column wpb_content_element ">
+                    <div class="wpb_wrapper">
+                        <h5><span style="color: #808080;">{{ store.name }}</span></h5>
+                    </div>
+                </div>
+                <div class="wpb_text_column wpb_content_element ">
+                    <div class="wpb_wrapper">
+                        <p>
+                            <span style="color: #808080;">
+                                {{ store.address }}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="vc_empty_space" style="height: 42px">
+                    <span class="vc_empty_space_inner"></span>
+                </div>
+                <div class="eltdf-icon-list-holder" style="margin-bottom: 0px">
+                    <div class="eltdf-il-icon-holder">
+                        <i class="eltdf-icon-ion-icon ion-ios-telephone-outline " style="color: #b59f00;font-size: 18px"></i>
+                    </div>
+                    <p class="eltdf-il-text" style="color: #808080;font-size: 15px;padding-left: 20px">
+                        Phone: {{ store.phone }}
+                    </p>
+                </div>
+                <div class="eltdf-icon-list-holder" style="margin-bottom: 0px">
+                    <div class="eltdf-il-icon-holder">
+                        <i class="eltdf-icon-ion-icon ion-ios-folder-outline " style="color: #b59f00;font-size: 18px"></i>
+                    </div>
+                    <p class="eltdf-il-text" style="color: #808080;font-size: 15px;padding-left: 20px">
+                        Email: {{ store.email }}
+                    </p>
+                </div>
+                <div class="vc_empty_space" style="height: 42px">
+                    <span class="vc_empty_space_inner"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

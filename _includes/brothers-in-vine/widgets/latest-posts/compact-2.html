@@ -1,0 +1,26 @@
+<div class="widget eltdf-blog-list-widget">
+    <div class="eltdf-blog-list-holder  eltdf-blog-list-columns-1 eltdf-blog-list-normal-space eltdf-classic" data-max-num-pages="1" data-next-page="2" data-type="classic" data-number-of-posts="2" data-number-of-columns="1" data-image-size="full" data-order-by="title" data-order="ASC" data-category="quotes" data-title-tag="h5" data-text-length="90" data-post-info-section="yes" data-post-info-author="no" data-post-info-date="yes" data-post-info-category="yes" data-post-info-comments="yes" data-post-info-like="no" data-post-info-share="no" data-post-info-tags="no" data-enable-read-more-button="yes" data-enable-load-more-button="no">
+        <ul class="eltdf-blog-list">
+            {% for post in site.posts limit:2 %}
+            <li class="eltdf-bli">
+                <div class="eltdf-bli-inner">
+                    <div class="eltdf-item-text-holder">
+                        <div class="eltdf-bli-info">
+                            <span itemprop="dateCreated" class="eltdf-post-info-date entry-date published updated">
+                                <a itemprop="url" href="{{post.url}}">{{ post.date | date: '%B %d, %Y' }}</a>
+                            </span>
+                        </div>
+                        <span itemprop="name" class="eltdf-bli-title entry-title">
+                            <span class="eltdf-bli-title-inner">
+                                <a itemprop="url" href="{{post.url}}" title="Etiam risus nunc, feugiat id commodo ut, laoreet in augue">
+                                    {{post.title}}
+                                </a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

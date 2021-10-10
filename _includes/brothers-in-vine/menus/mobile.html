@@ -1,0 +1,9 @@
+<nav class="eltdf-mobile-nav" role="navigation" aria-label="Mobile Menu" style="min-height: 100vh; display: none;">
+    <div class="eltdf-grid">
+        <ul id="menu-main-manu">
+            {% for item in site.menu %}
+                {%- include brothers-in-vine/menus/menu-loop-item.html -%}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

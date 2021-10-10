@@ -1,0 +1,40 @@
+<div class="textwidget">
+    {% for store in site.stores %}
+        <div>
+            <span class="eltdf-il-text" style="color: #ffffff;font-size: 13px;display: flex;align-items: center;">
+                <img src="https://cdn.countryflags.com/thumbs/{{ store.countrySlug }}/flag-400.png" style="height: 14px;display: inline;margin-right: 6px;">
+                {{ store.phone }}
+            </span>
+        </div>
+        <div class="vc_empty_space" style="height: 3px">
+            <span class="vc_empty_space_inner"></span>
+        </div>
+        <div class="eltdf-icon-list-holder">
+            <div class="eltdf-il-icon-holder">
+                <i class="eltdf-icon-linea-icon icon-basic-geolocalize-01 " style="color: #ffffff;font-size: 18px"></i>
+            </div>
+            <p class="eltdf-il-text" style="font-size: 13px;padding-left: 22px">{{ store.address }}</p>
+        </div>
+        <div class="vc_empty_space" style="height: 3px">
+            <span class="vc_empty_space_inner"></span>
+        </div>
+        <a href="mailto:{{ store.email }}" target="_blank">
+            <div class="eltdf-icon-list-holder">
+                <div class="eltdf-il-icon-holder">
+                    <i class="eltdf-icon-linea-icon icon-basic-mail " style="color: #ffffff;font-size: 18px"></i>
+                </div>
+                <p class="eltdf-il-text" style="font-size: 13px;padding-left: 22px">{{ store.email }}</p>
+            </div>
+        </a>
+        {% if forloop.last == false %}
+            <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_60 vc_sep_pos_align_left vc_separator_no_text vc_sep_color_grey" style="margin-top: 1em;display: block;margin-bottom: 1em !important;">
+                <span class="vc_sep_holder vc_sep_holder_l">
+                    <span class="vc_sep_line"></span>
+                </span>
+                        <span class="vc_sep_holder vc_sep_holder_r">
+                    <span class="vc_sep_line"></span>
+                </span>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

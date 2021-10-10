@@ -1,3 +1,3 @@
 ---
-title: Vino – A Refined Winery, Wine Bar and Vineyard Theme
+layout: brothers-in-vine/home
 ---

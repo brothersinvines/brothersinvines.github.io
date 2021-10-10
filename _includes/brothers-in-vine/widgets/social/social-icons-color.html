@@ -1,0 +1,39 @@
+<div class="widget social social-icons">
+    {%- if site.social.instagram != '' -%}
+    <span class="eltdf-icon-shortcode eltdf-normal" data-color="#b59f00" data-hover-color="#808080">
+        <a class="" href="https://www.instagram.com/{{site.social.instagram}}" itemprop="url" target="_blank">
+            <span aria-hidden="true" class="eltdf-icon-font-elegant social_instagram eltdf-icon-element" style="color: rgb(181, 159, 0); font-size: 11px;"></span>
+        </a>
+    </span>
+    {%- endif -%}
+    {%- if site.social.twitter != '' -%}
+    <span class="eltdf-icon-shortcode eltdf-normal" data-color="#b59f00" data-hover-color="#808080">
+        <a class="" href="https://twitter.com/{{site.social.twitter}}" itemprop="url" target="_blank">
+            <span aria-hidden="true" class="eltdf-icon-font-elegant social_twitter eltdf-icon-element" style="color: rgb(181, 159, 0); font-size: 11px;"></span>
+        </a>
+    </span>
+    {%- endif -%}
+    {%- if site.social.facebook != '' -%}
+    <span class="eltdf-icon-shortcode eltdf-normal" data-color="#b59f00" data-hover-color="#808080">
+        <a class="" href="https://www.facebook.com/{{site.social.facebook}}" itemprop="url" target="_blank">
+            <span aria-hidden="true" class="eltdf-icon-font-elegant social_facebook eltdf-icon-element" style="color: rgb(181, 159, 0); font-size: 11px;"></span>
+        </a>
+    </span>
+    {%- endif -%}
+    {%- if site.social.tumblr != '' -%}
+    <span class="eltdf-icon-shortcode eltdf-normal" data-color="#b59f00" data-hover-color="#808080">
+        <a class="" href="https://{{site.social.tumblr}}.tumblr.com" itemprop="url" target="_self">
+            <span aria-hidden="true" class="eltdf-icon-font-elegant social_tumblr eltdf-icon-element" style="color: rgb(181, 159, 0); font-size: 11px;"></span>
+        </a>
+    </span>
+    {%- endif -%}
+</div>
+<style>
+    .widget.social.social-icons > span {
+        margin: 0 8px;
+    }
+
+    .widget.social.social-icons > span:first-child {
+        margin: 0 8px 0 0;
+    }
+</style>

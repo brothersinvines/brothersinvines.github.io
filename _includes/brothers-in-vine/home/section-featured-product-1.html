@@ -1,0 +1,44 @@
+{% assign featuredProduct = site.products|first %}
+<div class="vc_row wpb_row vc_inner vc_row-fluid">
+    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-4">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="vc_empty_space" style="height: 95px">
+                    <span class="vc_empty_space_inner"></span>
+                </div>
+                <div class="eltdf-parallax-image" style="height: 422px">
+                    <img src="{{ featuredProduct.image | relative_url }}" alt="h1-img-5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-9 vc_col-md-8">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="eltdf-elements-holder eltdf-responsive-mode-768">
+                    <div class="eltdf-eh-item " data-item-class="eltdf-eh-custom-971564" data-1024-1280="129px 15% 150px 0px" data-768-1024="137px 10% 150px 0px" data-600-768="50px 6% 150px 0px" data-480-600="50px 0% 150px 0px" data-480="50px 0% 150px 0px">
+                        <div class="eltdf-eh-item-inner">
+                            <div class="eltdf-eh-item-content eltdf-eh-custom-971564" style="padding: 129px 22% 150px 0px">
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <h6>{{featuredProduct.year}}</h6>
+                                    </div>
+                                </div>
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1489570360322">
+                                    <div class="wpb_wrapper">
+                                        <h3>{{featuredProduct.title}}</h3>
+                                    </div>
+                                </div>
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1489668159307">
+                                    <div class="wpb_wrapper">
+                                        <p>{{featuredProduct.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

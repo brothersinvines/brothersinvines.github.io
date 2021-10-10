@@ -1,0 +1,49 @@
+{% assign featuredProduct = site.products[1] %}
+<div class="vc_row wpb_row vc_inner vc_row-fluid">
+    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-9 vc_col-md-8">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="eltdf-elements-holder eltdf-responsive-mode-768">
+                    <div class="eltdf-eh-item eltdf-horizontal-alignment-right" data-item-class="eltdf-eh-custom-773960" data-1024-1280="129px 0% 150px 15%" data-768-1024="129px 0% 150px 10%" data-600-768="150px 0% 0px 6%" data-480-600="150px 0% 0px 0px" data-480="150px 0% 0px 0px">
+                        <div class="eltdf-eh-item-inner">
+                            <div class="eltdf-eh-item-content eltdf-eh-custom-773960" style="padding: 129px 0% 150px 22%">
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <h6>{{featuredProduct.year}}</h6>
+                                    </div>
+                                </div>
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1489669487459">
+                                    <div class="wpb_wrapper">
+                                        <h3>{{featuredProduct.title}}</h3>
+                                    </div>
+                                </div>
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1489668159307">
+                                    <div class="wpb_wrapper">
+                                        <p>{{featuredProduct.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-4">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="eltdf-elements-holder eltdf-responsive-mode-768">
+                    <div class="eltdf-eh-item eltdf-horizontal-alignment-center" data-item-class="eltdf-eh-custom-993692" data-1280-1600="106px 0px 0px 0px" data-1024-1280="106px 0px 0px 0px" data-768-1024="88px 0px 0px 0px" data-600-768="10px 0px 150px 0px" data-480-600="96px 0px 150px 0px" data-480="96px 0px 150px 0px">
+                        <div class="eltdf-eh-item-inner">
+                            <div class="eltdf-eh-item-content eltdf-eh-custom-993692" style="padding: 106px 0px 0px 0px">
+                                <div class="eltdf-parallax-image" style="height: 422px">
+                                    <img src="{{ featuredProduct.image | relative_url }}" alt="h1-img-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    {% assign customPageTitle = "Products" %}
+    {%- include brothers-in-vine/head.html -%}
+    <style id="vino-elated-modules-inline-css" type="text/css">
+        .page-id-8512 .eltdf-content .eltdf-content-inner>.eltdf-container>.eltdf-container-inner,
+        .page-id-8512 .eltdf-content .eltdf-content-inner>.eltdf-full-width>.eltdf-full-width-inner {
+            padding-top: 0px !important;
+        }
+
+
+        /* Chrome Fix */
+        .eltdf-vertical-align-containers .eltdf-position-center:before,
+        .eltdf-vertical-align-containers .eltdf-position-left:before,
+        .eltdf-vertical-align-containers .eltdf-position-right:before {
+            margin-right: 0;
+        }
+
+         .eltdf-main-menu>ul>li>a>span.item_outer {
+             position: static;
+             -webkit-transform: translateY(0);
+             -moz-transform: translateY(0);
+             transform: translateY(0);
+         }
+    </style>
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1492067611014 {
+            padding-top: 83px !important;
+            padding-bottom: 50px !important;
+        }
+    </style><noscript>
+    <style>
+        .wpb_animate_when_almost_visible {
+            opacity: 1;
+        }
+    </style>
+</noscript>
+</head>
+
+<body class="page-template-default page page-id-8512 theme-vino eltd-core-1.4 woocommerce-no-js vino-ver-1.8 eltdf-smooth-page-transitions eltdf-mimic-ajax eltdf-grid-1300 eltdf-fade-push-text-right eltdf-header-standard eltdf-sticky-header-on-scroll-up eltdf-default-mobile-header eltdf-sticky-up-mobile-header eltdf-dropdown-animate-height eltdf-fullscreen-search eltdf-search-fade eltdf-side-menu-slide-from-right eltdf-woocommerce-columns-4 eltdf-woo-normal-space eltdf-woo-pl-info-below-image wpb-js-composer js-comp-ver-6.6.0 vc_responsive" itemscope="" itemtype="http://schema.org/WebPage">
+<div class="eltdf-wrapper">
+    <div class="eltdf-wrapper-inner">
+        {%- include brothers-in-vine/header.html -%}
+        <div class="eltdf-content">
+            <div class="eltdf-content-inner">
+                <div class="eltdf-title eltdf-breadcrumbs-type eltdf-content-left-alignment" style="height:100px;">
+                    <div class="eltdf-title-image"></div>
+                    <div class="eltdf-title-holder">
+                        <div class="eltdf-container clearfix">
+                            <div class="eltdf-container-inner">
+                                <div class="eltdf-title-subtitle-holder">
+                                    <h1 class="eltdf-title-text entry-title"><span>{{page.title}}</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eltdf-container eltdf-default-page-template">
+                    <div class="eltdf-container-inner clearfix">
+                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1492067611014 eltdf-row-type-row"
+                             style="">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="eltdf-pl-holder eltdf-standard-layout eltdf-normal-space eltdf-four-columns eltdf-info-below-image ">
+                                            <div class="eltdf-pl-outer">
+                                                {% for post in site.products %}
+                                                    {%- include brothers-in-vine/loop-item.html -%}
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%- include brothers-in-vine/footer.html -%}
+    </div>
+</div>
+{%- include brothers-in-vine/footer-scripts.html -%}
+</body>
+
+</html>

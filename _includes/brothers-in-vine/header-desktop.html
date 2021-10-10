@@ -1,0 +1,40 @@
+<header class="eltdf-page-header" style="background-color:rgba(255, 255, 255, 0.99);">
+    <div class="eltdf-menu-area" style="opacity: 1;">
+        <div class="eltdf-vertical-align-containers">
+            <div class="eltdf-position-left">
+                <div class="eltdf-position-left-inner">
+                    <nav class="eltdf-main-menu eltdf-drop-down eltdf-divided-left-part eltdf-default-nav">
+                        <ul id="menu-divided-menu-left" class="clearfix">
+                            {% for item in site.menu limit:1 offset:1%}
+                                {%- include brothers-in-vine/menus/menu-loop-item.html -%}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="eltdf-position-center">
+                <div class="eltdf-position-center-inner">
+                    <div class="eltdf-logo-wrapper">
+                        <a itemprop="url" href="{{site.url}}">
+                            {%- include brothers-in-vine/logos/logo.html -%}
+                        </a>
+                        <svg class="eltdf-logo-angled-shape eltdf-logo-svg-top" preserveAspectRatio="none" viewBox="0 0 292.943 35.015" width="120%" height="50px">
+                            <path style="fill:rgba(255, 255, 255, 0.99);" d="M0,0c0,0,117.49,35.015,145.89,35.015C174.29,35.015,292.944,0,292.944,0H0z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="eltdf-position-right">
+                <div class="eltdf-position-right-inner">
+                    <nav class="eltdf-main-menu eltdf-drop-down eltdf-divided-right-part eltdf-default-nav">
+                        <ul id="menu-divided-menu-right" class="clearfix">
+                            {% for item in site.menu limit:1 offset:2 %}
+                                {%- include brothers-in-vine/menus/menu-loop-item.html -%}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
