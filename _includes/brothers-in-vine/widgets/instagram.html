@@ -1,9 +1,10 @@
-{% comment %}{% include brothers-in-vine/logos/instagram.svg %} {% endcomment %}
-<!--<img src="{{ 'assets/brothers-in-vine/images/logos/instagram-2.png' | relative_url }}" />-->
 <a style="display: flex;align-items: center;" href="https://www.instagram.com/{{ site.social.instagram }}" target="_blank">
     <img src="/assets/brothers-in-vine/images/logos/instagram-3.png" style="max-height: 20px;margin-right: 0.4rem;">
     <h6>{{ site.social.instagram }}</h6>
 </a>
+<div class="vc_empty_space" style="height: 12px">
+    <span class="vc_empty_space_inner"></span>
+</div>
 <ul class="eltdf-instagram-feed clearfix eltdf-col-3 eltdf-instagram-gallery eltdf-normal-space">
     {% for item in site.widgets.instagram %}
         <li>

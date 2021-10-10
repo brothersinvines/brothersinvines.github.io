@@ -85,22 +85,34 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="eltdf-row-grid-section">
+<!--                            <div class="eltdf-row-grid-section">-->
+<!--                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1489670857645 eltdf-row-type-row" style="">-->
+<!--                                    <div class="wpb_column vc_column_container vc_col-sm-12">-->
+<!--                                        <div class="vc_column-inner">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                {%- include brothers-in-vine/home/section-separator.html -%}-->
+<!--                                                {%- include brothers-in-vine/home/section-featured-product-1.html -%}-->
+<!--                                                {%- include brothers-in-vine/home/section-separator.html -%}-->
+<!--                                                {%- include brothers-in-vine/home/section-featured-product-2.html -%}-->
+<!--                                                {%- include brothers-in-vine/home/section-separator.html -%}-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div class="eltdf-row-grid-section" style="padding: 4.5% 0 0">
                                 <div class="vc_row wpb_row vc_row-fluid vc_custom_1489670857645 eltdf-row-type-row" style="">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="vc_column-inner">
-                                            <div class="wpb_wrapper">
-                                                {%- include brothers-in-vine/home/section-separator.html -%}
-                                                {%- include brothers-in-vine/home/section-featured-product-1.html -%}
-                                                {%- include brothers-in-vine/home/section-separator.html -%}
-                                                {%- include brothers-in-vine/home/section-featured-product-2.html -%}
-                                                {%- include brothers-in-vine/home/section-separator.html -%}
-                                            </div>
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            {% include brothers-in-vine/home/section-featured-products.liquid %}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {% include brothers-in-vine/home/section-our-team.liquid %}
+                            {% include brothers-in-vine/home/section-separator.html %}
+                            <div class="eltdf-row-grid-section" style="padding: 4.5% 0 0">
+                                {% include brothers-in-vine/home/section-our-team.liquid %}
+                            </div>
                             <div class="vc_row wpb_row vc_row-fluid eltdf-row-type-row" style="">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner">

@@ -1,10 +1,19 @@
-<div class="textwidget">
-    {% for store in site.stores %}
-        <div>
-            <span class="eltdf-il-text" style="color: #ffffff;font-size: 13px;display: flex;align-items: center;">
-                <img src="https://cdn.countryflags.com/thumbs/{{ store.countrySlug }}/flag-400.png" style="height: 14px;display: inline;margin-right: 6px;">
+<div id="text-3" class="widget eltdf-footer-column-2 widget_text">
+    <div class="textwidget">
+        <h4>
+            <img src="https://cdn.countryflags.com/thumbs/{{ store.countrySlug }}/flag-400.png" style="height: 14px;display: inline;margin-right: 6px;">
+            {{ store.name }}
+        </h4>
+        <div class="vc_empty_space" style="height: 6px">
+            <span class="vc_empty_space_inner"></span>
+        </div>
+        <div class="eltdf-icon-list-holder">
+            <div class="eltdf-il-icon-holder">
+                <i class="eltdf-icon-linea-icon ion-ios-telephone-outline " style="color: #ffffff;font-size: 18px"></i>
+            </div>
+            <p class="eltdf-il-text" style="color: #ffffff;font-size: 13px;padding-left: 22px">
                 <a href="tel:{{ store.phone }}">{{ store.phone }}</a>
-            </span>
+            </p>
         </div>
         <div class="vc_empty_space" style="height: 3px">
             <span class="vc_empty_space_inner"></span>
@@ -36,5 +45,5 @@
                 </span>
             </div>
         {% endif %}
-    {% endfor %}
+    </div>
 </div>

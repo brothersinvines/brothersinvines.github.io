@@ -1,6 +1,7 @@
 :root {
     --text-color: #ababab;
     --primary-color: #b1af6a;
+    --separator-color: #b1af6a;
     --primary-color-transparent-20: rgba(177,175,104,0.2);
     --primary-color-transparent: rgba(177,175,106,.7);
 }

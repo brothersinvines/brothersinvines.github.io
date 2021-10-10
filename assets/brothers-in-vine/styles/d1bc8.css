@@ -14129,7 +14129,7 @@ body:not(.single-portfolio-item) .eltdf-image-gallery .eltdf-ig-slider .owl-item
 
 .eltdf-section-title-holder .eltdf-separator {
     width: 60px;
-    border-color: #c7c7c7;
+    border-color: var(--separator-color);
     margin: 15px 0 5px
 }
 
@@ -14160,7 +14160,7 @@ body:not(.single-portfolio-item) .eltdf-image-gallery .eltdf-ig-slider .owl-item
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid var(--separator-color);
     margin: 10px 0
 }
 

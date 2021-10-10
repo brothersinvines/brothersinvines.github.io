@@ -31,24 +31,26 @@
         {%- include brothers-in-vine/header.html -%}
         <div class="eltdf-content">
             <div class="eltdf-content-inner">
-                <div class="eltdf-title eltdf-standard-type eltdf-preload-background eltdf-has-background eltdf-has-parallax-background eltdf-content-center-alignment eltdf-title-image-not-responsive"
-                     style="height:500px;background-image:url({{page.image}}); background-size: cover;"
-                     data-height="500" data-background-width="&quot;1920&quot;">
-                    <div class="eltdf-title-image">
-                        <img itemprop="image" src="{{page.image}}" alt="Image thumbnail">
-                    </div>
-                    <div class="eltdf-title-holder" style="height:500px;">
-                        <div class="eltdf-container clearfix">
-                            <div class="eltdf-container-inner">
-                                <div class="eltdf-title-subtitle-holder" style="">
-                                    <h1 itemprop="name" class="eltdf-title-text entry-title" style="color:#ffffff;">
-                                        <span>{{page.title}}</span></h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+<!--                <div class="eltdf-title eltdf-standard-type eltdf-preload-background eltdf-has-background eltdf-has-parallax-background eltdf-content-center-alignment eltdf-title-image-not-responsive"-->
+<!--                     style="height:500px;background-image:url({{page.image}}); background-size: cover;"-->
+<!--                     data-height="500" data-background-width="&quot;1920&quot;">-->
+<!--                    <div class="eltdf-title-image">-->
+<!--                        <img itemprop="image" src="{{page.image}}" alt="Image thumbnail">-->
+<!--                    </div>-->
+<!--                    <div class="eltdf-title-holder" style="height:500px;">-->
+<!--                        <div class="eltdf-container clearfix">-->
+<!--                            <div class="eltdf-container-inner">-->
+<!--                                <div class="eltdf-title-subtitle-holder" style="">-->
+<!--                                    <h1 itemprop="name" class="eltdf-title-text entry-title" style="color:#ffffff;">-->
+<!--                                        <span>{{page.title}}</span></h1>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <div class="eltdf-full-width">
+                    {{ content }}
                     <div class="eltdf-full-width-inner" style="padding-top: 0 !important;">
                         <div class="eltdf-row-grid-section">
                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1491831764066 vc_row-has-fill eltdf-row-type-row">
@@ -134,7 +136,6 @@
                         {% comment %}
                             {% include brothers-in-vine/about/section-years-of-experience.liquid %}
                         {% endcomment %}
-                        {{ content }}
                     </div>
                 </div>
             </div>
