@@ -1,4 +1,4 @@
-version: '1.0.9'
+version: '1.0.10'
 title: 'Brothers in Vines'
 author: 'Sherwin Van Wyk'
 email: 'brothersinvines@gmail.com'
@@ -41,6 +41,8 @@ menu:
     url: '/contact-us'
 
 widgets:
+  snazzymaps:
+    id: 344586
   instagram:
     -
       postID: CAStOSRhRxQ
@@ -79,7 +81,7 @@ home:
     -
       title: 'Limitless Blending'
       tagline: >-
-        A unique approach to the Wine making Industry
+        A unique approach in wine making principles
       imageURL: assets/brothers-in-vine/images/slideshow/slide-13.png
     -
       title: 'Family Orientated'
@@ -89,7 +91,7 @@ home:
     -
       title: 'Virtual Cellar'
       tagline: >-
-        Blend without restrictions
+        Blending without restriction
       imageURL: assets/brothers-in-vine/images/slideshow/slide-17.png
     -
       title: 'Founded in 2015'
@@ -97,7 +99,7 @@ home:
         15 Years of Experience of Dedication and Passion
       imageURL: assets/brothers-in-vine/images/slideshow/slide-15.png
     -
-      title: 'Quality & Balance Grapes'
+      title: 'Quality and well balanced grapes'
       tagline: >-
         Producing an outstanding wine for you to enjoy
       imageURL: assets/brothers-in-vine/images/slideshow/slide-20.png
