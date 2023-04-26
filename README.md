@@ -5,15 +5,14 @@ This repo is intended to be forked and work out the box
 
 ## Getting Started
 ```
+bundle install
 bundle exec jekyll serve
 ```
 
 ---
 
 ## Updating Theme
-```
 https://jamstackthemes.dev/theme/#ssg=jekyll
-```
 
 ---
 
