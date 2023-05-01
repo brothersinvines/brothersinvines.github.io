@@ -4,20 +4,15 @@
             <div class="eltdf-footer-top ">
                 <div class="eltdf-container">
                     <div class="eltdf-container-inner">
-                        <div class="eltdf-three-columns clearfix">
-                            <div class="eltdf-three-columns-inner">
+                        <div class="eltdf-four-columns clearfix">
+                            <div class="eltdf-four-columns-inner">
+                                {% for store in site.stores %}
                                 <div class="eltdf-column">
                                     <div class="eltdf-column-inner">
-                                        {% assign store = site.stores[0] %}
                                         {% include brothers-in-vine/widgets/stores/stores-small.liquid %}
                                     </div>
                                 </div>
-                                <div class="eltdf-column">
-                                    <div class="eltdf-column-inner">
-                                        {% assign store = site.stores[1] %}
-                                        {% include brothers-in-vine/widgets/stores/stores-small.liquid %}
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="eltdf-column">
                                     <div class="eltdf-column-inner">
                                         <div id="eltdf_instagram_widget-10" class="widget eltdf-footer-column-4 widget_eltdf_instagram_widget">

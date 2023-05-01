@@ -121,3 +121,11 @@ stores:
     address: >-
       Western Cape,
       South Africa
+  -
+    name: 'United States of America'
+    countrySlug: 'united-states-of-america'
+    phone: '+1 (0) 727 301 0850'
+    email: 'info@clauderoseimporting.com'
+    address: >-
+      Florida,
+      United States of America
